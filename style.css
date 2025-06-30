@@ -1,0 +1,23 @@
+body {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    padding: 10px 10px;
+    background-color: beige;
+}
+.btn {
+    border: 1px solid black;
+    width: 25%;
+    height: auto;
+    color: blueviolet;
+    font-size: 18px;
+    border-radius: 10px;
+    padding: 10px;
+}
+.btn:hover {
+    background: #609cc4;
+    color: #fff;
+    transform : translateY(-8px);
+    width: 40%;
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.2);
+}
