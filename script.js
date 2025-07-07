@@ -106,4 +106,27 @@ function CompetencyAssessment() {
         alert("Yếu");
     }
 }
- 
+function numberCheck() {
+    function checkNumber(num) {
+
+        return new Promise((resolve, reject) => {
+            if (num % 2 === 0) {
+                resolve(`Số ${num} là số chẵn!`);
+            } else {
+                reject(`Lỗi: Số ${num} là số lẻ!`);
+            }
+        });
+    }
+    const input = prompt("Nhập vào một số nguyên:");
+    const number = parseInt(input);
+    checkNumber(number)
+        .then(result => {
+            alert(result);
+        })
+        .catch(error => {
+            alert(error);
+        })
+        .finally(() => {
+            console.log("Kiểm tra đã hoàn tất.");
+        });
+}
